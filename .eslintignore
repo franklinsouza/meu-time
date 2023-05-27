@@ -1,3 +1,4 @@
 vite.config.ts
 commitlint.config.cjs
 tailwind.config.js
+postcss.config.js

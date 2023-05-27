@@ -1,5 +1,7 @@
+import Login from './pages/Login';
+
 function App() {
-  return <p className="text-slate-950">App</p>;
+  return <Login />;
 }
 
 export default App;
