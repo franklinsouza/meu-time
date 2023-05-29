@@ -1,7 +1,8 @@
 import { ApiRequestInit } from './api.type';
 
 const BASE_URL = 'https://v3.football.api-sports.io';
-const storageKey = 'keykeykey';
+let storageKey: string | null = localStorage.getItem('mta');
+storageKey = storageKey !== null ? JSON.parse(storageKey) : null;
 
 function api(endPoint: string, key = storageKey): ApiRequestInit {
   return {

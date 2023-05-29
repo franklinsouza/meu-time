@@ -3,16 +3,17 @@ import { LogIn } from 'lucide-react';
 import Input from '../Input';
 import LoadingBal from '../../../../components/LoadingBall';
 import useFetch from '../../../../hooks/useFetch';
+import useLocalStorage from '../../../../hooks/useLocalStorage';
 
 const Form = () => {
   const { me } = useFetch();
+  const [, setKeyStorage] = useLocalStorage('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const refKeyField = useRef<HTMLInputElement>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setError('');
     const key = refKeyField.current?.value;
 
     if (!key) {
@@ -21,10 +22,10 @@ const Form = () => {
     }
 
     try {
+      setError('');
       setLoading(true);
       await me(key);
-
-      // save key on localStorage
+      setKeyStorage({ key });
       // save isLogged context
       // Redirect to select team
     } catch (_) {
