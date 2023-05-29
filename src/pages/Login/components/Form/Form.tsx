@@ -1,31 +1,35 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { LogIn } from 'lucide-react';
 import Input from '../Input';
-import LoadingBall from '../../../../LoadingBall';
+import LoadingBal from '../../../../components/LoadingBall';
+import useFetch from '../../../../hooks/useFetch';
 
 const Form = () => {
-  const [error, setError] = useState('');
+  const { me } = useFetch();
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const refKeyField = useRef<HTMLInputElement>(null);
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setError('');
+    const key = refKeyField.current?.value;
+
+    if (!key) {
+      setError('Digite uma key');
+      return;
+    }
 
     try {
-      setError('');
       setLoading(true);
-
-      // await request;
-      // console.log(data.key);
-
-      // save isLogged context
+      await me(key);
 
       // save key on localStorage
-
+      // save isLogged context
       // Redirect to select team
     } catch (_) {
       setError('Key não existente. Ela está correta? 🤔');
     } finally {
-      setError('');
       setLoading(false);
     }
   };
@@ -38,13 +42,15 @@ const Form = () => {
           name="key"
           disabled={loading}
           styles="w-[340px] text-xl"
+          ref={refKeyField}
         />
+
         <button
           className="bg-primary-01 w-[60px] h-[60px] flex justify-center items-center font-semibold"
           type="submit"
           disabled={loading}
         >
-          {loading ? <LoadingBall styles="w-7" /> : <LogIn />}
+          {loading ? <LoadingBal styles="w-7" /> : <LogIn />}
         </button>
       </div>
 

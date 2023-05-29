@@ -1,4 +1,4 @@
-import ball from '../assets/ball-white.svg';
+import ball from '../../assets/ball-white.svg';
 
 const LoadingBall = ({ styles }: { styles: string }) => {
   return (

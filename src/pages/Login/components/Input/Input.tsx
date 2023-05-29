@@ -1,22 +1,19 @@
-const Input = ({
-  placeholder,
-  disabled,
-  name,
-  styles,
-}: {
-  placeholder: string;
-  disabled: boolean;
-  name: string;
-  styles: string;
-}) => {
+import { forwardRef } from 'react';
+import { InputProps } from './Input.type';
+
+// eslint-disable-next-line react/display-name
+const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+  const { placeholder, name, disabled, styles } = props;
+
   return (
     <input
-      name={name}
       placeholder={placeholder}
+      name={name}
       disabled={disabled}
       className={styles}
+      ref={ref}
     />
   );
-};
+});
 
 export default Input;
