@@ -1,13 +1,17 @@
 import { useRef, useState } from 'react';
 import { LogIn } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import Input from '../Input';
 import LoadingBal from '../../../../components/LoadingBall';
 import useFetch from '../../../../hooks/useFetch';
 import useLocalStorage from '../../../../hooks/useLocalStorage';
+import useUserContext from '../../../../hooks/useUserContext';
 
 const Form = () => {
+  const navigate = useNavigate();
   const { me } = useFetch();
-  const [, setKeyStorage] = useLocalStorage('');
+  const { setStorage } = useLocalStorage();
+  const { setUser } = useUserContext();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const refKeyField = useRef<HTMLInputElement>(null);
@@ -25,9 +29,9 @@ const Form = () => {
       setError('');
       setLoading(true);
       await me(key);
-      setKeyStorage({ key });
-      // save isLogged context
-      // Redirect to select team
+      setStorage({ key });
+      setUser((prevUser) => ({ ...prevUser, isLogged: true }));
+      navigate('/select-team', { replace: true });
     } catch (_) {
       setError('Key não existente. Ela está correta? 🤔');
     } finally {

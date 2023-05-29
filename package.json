@@ -12,9 +12,13 @@
     "commit": "git-cz"
   },
   "dependencies": {
+    "localforage": "^1.10.0",
     "lucide-react": "^0.221.0",
+    "match-sorter": "^6.3.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
+    "sort-by": "^1.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
