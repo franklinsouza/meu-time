@@ -9,12 +9,11 @@
   }
 
   body {
-    @apply w-full h-full bg-body bg-[#12111A] bg-no-repeat bg-cover bg-top;
+    @apply w-full h-full bg-[#12111A];
   }
 
-  input,
-  select {
-    @apply bg-[#2A2931] p-3 w-full h-[60px] border border-[#403F46] outline-0 disabled:opacity-75;
+  input {
+    @apply bg-secondary-01 p-3 w-full h-[60px] border border-[#403F46] outline-0 disabled:opacity-75;
   }
 
   button {

@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import AppProvider from './contexts';
 import SelectTeam from './pages/SelectTeam';
+import Dashboard from './pages/Dashboard';
+import PrivateRoute from './components/Routes/PrivateRoute';
 
 function App() {
   return (
@@ -9,7 +11,22 @@ function App() {
       <AppProvider>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/select-team" element={<SelectTeam />} />
+          <Route
+            path="/select-team"
+            element={
+              <PrivateRoute>
+                <SelectTeam />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/dashboard"
+            element={
+              <PrivateRoute>
+                <Dashboard />
+              </PrivateRoute>
+            }
+          />
         </Routes>
       </AppProvider>
     </Router>

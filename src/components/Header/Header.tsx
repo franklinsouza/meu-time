@@ -1,10 +1,22 @@
 import { useCallback, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import useUserContext from '../../hooks/useUserContext';
 import useFetch from '../../hooks/useFetch';
+import shieldLogo from '../../assets/meu-time-shield.svg';
+import meuTime from '../../assets/meu-time.svg';
+import useLocalStorage from '../../hooks/useLocalStorage';
 
 const Header = () => {
+  const navigate = useNavigate();
   const { user, setUser } = useUserContext();
   const { me } = useFetch();
+  const { cleanStorage } = useLocalStorage();
+
+  const logOut = () => {
+    setUser((prevUser) => ({ ...prevUser, isLogged: false }));
+    navigate('/', { replace: true });
+    cleanStorage();
+  };
 
   const getUserData = useCallback(async () => {
     const data = await me();
@@ -23,11 +35,14 @@ const Header = () => {
     if (!user?.isLogged) {
       getUserData();
     }
-  }, [user, setUser, getUserData, user?.isLogged]);
+  }, [user?.isLogged, getUserData]);
 
   return (
-    <div className="flex justify-between items-start mt-10 mb-32">
-      <div className="bg-primary-01 w-28 h-8 text-center" />
+    <div className="flex justify-between items-center mt-10 mb-28">
+      <div className="flex gap-x-2">
+        <img src={shieldLogo} alt="logo" className="w-8" />
+        <img src={meuTime} alt="logo" className="w-28" />
+      </div>
 
       <div className="flex gap-x-2 text-xs uppercase">
         <p>
@@ -47,12 +62,18 @@ const Header = () => {
       </div>
 
       <div className="flex items-center">
-        <div className="text-right flex flex-col mr-2">
+        <div className="flex flex-col items-end text-right">
           <span className="font-semibold">
             {user?.firstName} {user?.lastName}
           </span>
 
-          <p className="text-primary-01 text-sm">LogOut</p>
+          <button
+            className="text-primary-01 text-sm cursor-pointer text-right"
+            onClick={() => logOut()}
+            type="button"
+          >
+            LogOut
+          </button>
         </div>
       </div>
     </div>

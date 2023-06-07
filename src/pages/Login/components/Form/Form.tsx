@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { LogIn } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Input from '../Input';
@@ -10,7 +10,7 @@ import useUserContext from '../../../../hooks/useUserContext';
 const Form = () => {
   const navigate = useNavigate();
   const { me } = useFetch();
-  const { setStorage } = useLocalStorage();
+  const { getStorage, setStorage } = useLocalStorage();
   const { setUser } = useUserContext();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -28,9 +28,17 @@ const Form = () => {
     try {
       setError('');
       setLoading(true);
-      await me(key);
+      const data = await me(key);
       setStorage({ key });
-      setUser((prevUser) => ({ ...prevUser, isLogged: true }));
+      setUser({
+        firstName: data.account.firstname,
+        lastName: data.account.lastname,
+        reqCurrent: data.requests.current,
+        reqLimit: data.requests.limit_day,
+        plan: data.subscription.plan,
+        key,
+        isLogged: true,
+      });
       navigate('/select-team', { replace: true });
     } catch (_) {
       setError('Key não existente. Ela está correta? 🤔');
@@ -38,6 +46,16 @@ const Form = () => {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    const { key, hasTeam } = getStorage();
+
+    if (key && hasTeam) {
+      navigate('/dashboard', { replace: true });
+    } else if (key && !hasTeam) {
+      navigate('/select-team', { replace: true });
+    }
+  });
 
   return (
     <form className="flex flex-col" onSubmit={handleSubmit}>

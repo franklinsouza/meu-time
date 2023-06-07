@@ -7,7 +7,9 @@ const useLocalStorage = () => {
     return parseData;
   };
 
-  const setStorage = (value: { [key: string]: string | number }): void => {
+  const setStorage = (value: {
+    [key: string]: string | number | boolean;
+  }): void => {
     const storageData = localStorage.getItem(STORAGE_KEY);
     const parseData = storageData ? JSON.parse(storageData) : {};
     const updateData = { ...parseData, ...value };
