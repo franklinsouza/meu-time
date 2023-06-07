@@ -196,10 +196,12 @@ const Form = () => {
           console.log(data);
 
           setDataLeaguesApi((prevData) => {
-            const transformDataForSelect = data.map(({ league }) => ({
-              value: league.id,
-              label: league.name,
-            }));
+            const transformDataForSelect = data.map(
+              ({ league }: { league: DataStur }) => ({
+                value: league.id,
+                label: league.name,
+              })
+            );
 
             return {
               ...prevData,
