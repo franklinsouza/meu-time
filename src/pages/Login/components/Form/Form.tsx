@@ -5,22 +5,21 @@ import Input from '../Input';
 import LoadingBal from '../../../../components/LoadingBall';
 import useFetch from '../../../../hooks/useFetch';
 import useLocalStorage from '../../../../hooks/useLocalStorage';
-import useUserContext from '../../../../hooks/useUserContext';
 
 const Form = () => {
   const navigate = useNavigate();
   const { me } = useFetch();
   const { getStorage, setStorage } = useLocalStorage();
-  const { setUser } = useUserContext();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const refKeyField = useRef<HTMLInputElement>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const key = refKeyField.current?.value;
+    const keyFieldValue = refKeyField.current?.value;
+    const storageKey = getStorage().key;
 
-    if (!key) {
+    if (!keyFieldValue) {
       setError('Digite uma key');
       return;
     }
@@ -28,18 +27,12 @@ const Form = () => {
     try {
       setError('');
       setLoading(true);
-      const data = await me(key);
-      setStorage({ key });
-      setUser({
-        firstName: data.account.firstname,
-        lastName: data.account.lastname,
-        reqCurrent: data.requests.current,
-        reqLimit: data.requests.limit_day,
-        plan: data.subscription.plan,
-        key,
-        isLogged: true,
-      });
-      navigate('/select-team', { replace: true });
+      await me(keyFieldValue);
+      setStorage({ key: keyFieldValue });
+
+      if (storageKey) {
+        navigate('/select-team', { replace: true });
+      }
     } catch (_) {
       setError('Key não existente. Ela está correta? 🤔');
     } finally {

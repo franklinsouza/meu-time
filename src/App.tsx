@@ -11,22 +11,8 @@ function App() {
       <AppProvider>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route
-            path="/select-team"
-            element={
-              <PrivateRoute>
-                <SelectTeam />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/dashboard"
-            element={
-              <PrivateRoute>
-                <Dashboard />
-              </PrivateRoute>
-            }
-          />
+          <Route path="/select-team" element={<SelectTeam />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </AppProvider>
     </Router>

@@ -6,7 +6,6 @@ export type User = {
   reqCurrent?: string;
   reqLimit?: string;
   plan?: string;
-  key?: string;
   isLogged?: true | false;
 };
 

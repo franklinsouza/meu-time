@@ -1,4 +1,5 @@
-import { useCallback, useEffect } from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useUserContext from '../../hooks/useUserContext';
 import useFetch from '../../hooks/useFetch';
@@ -10,7 +11,7 @@ const Header = () => {
   const navigate = useNavigate();
   const { user, setUser } = useUserContext();
   const { me } = useFetch();
-  const { cleanStorage } = useLocalStorage();
+  const { getStorage, cleanStorage } = useLocalStorage();
 
   const logOut = () => {
     setUser((prevUser) => ({ ...prevUser, isLogged: false }));
@@ -18,24 +19,29 @@ const Header = () => {
     cleanStorage();
   };
 
-  const getUserData = useCallback(async () => {
-    const data = await me();
-
-    setUser({
-      firstName: data.account.firstname,
-      lastName: data.account.lastname,
-      reqCurrent: data.requests.current,
-      reqLimit: data.requests.limit_day,
-      plan: data.subscription.plan,
-      isLogged: true,
-    });
-  }, [me, setUser]);
-
   useEffect(() => {
-    if (!user?.isLogged) {
+    const { key } = getStorage();
+
+    const getUserData = async () => {
+      try {
+        const data = await me(key);
+        setUser({
+          firstName: data.account.firstname,
+          lastName: data.account.lastname,
+          reqCurrent: data.requests.current,
+          reqLimit: data.requests.limit_day,
+          plan: data.subscription.plan,
+          isLogged: true,
+        });
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    if (key) {
       getUserData();
     }
-  }, [user?.isLogged, getUserData]);
+  }, []);
 
   return (
     <div className="flex justify-between items-center mt-10 mb-28">

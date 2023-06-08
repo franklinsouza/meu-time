@@ -7,7 +7,6 @@ import useFetch from '../../../../hooks/useFetch';
 import useLocalStorage from '../../../../hooks/useLocalStorage';
 import LoadingBall from '../../../../components/LoadingBall';
 import { DataApi, SelectActions } from './form.type';
-import useUserContext from '../../../../hooks/useUserContext';
 
 type DataStur = {
   id: number;
@@ -17,8 +16,7 @@ type DataStur = {
 const Form = () => {
   const navigate = useNavigate();
   const { countries, seasons, leagues, teams } = useFetch();
-  const { user } = useUserContext();
-  const { setStorage } = useLocalStorage();
+  const { getStorage, setStorage } = useLocalStorage();
   const [dataCountriesApi, setDataCountriesApi] = useState<DataApi>({
     isDisable: true,
     isLoading: false,
@@ -43,7 +41,6 @@ const Form = () => {
     optionSelected: '',
     data: [],
   });
-
   const [submitControl, setSubmitControl] = useState({
     isDisable: true,
     isLoading: false,
@@ -111,6 +108,7 @@ const Form = () => {
   };
 
   useEffect(() => {
+    const { key } = getStorage();
     const getCountries = async () => {
       try {
         setDataCountriesApi((prevData) => ({
@@ -119,7 +117,7 @@ const Form = () => {
           isLoading: true,
         }));
 
-        const { data } = await countries(user?.key);
+        const { data } = await countries(key);
 
         setDataCountriesApi((prevData) => {
           const transformDataForSelect = data.map(
@@ -141,7 +139,9 @@ const Form = () => {
       }
     };
 
-    getCountries();
+    if (key) {
+      getCountries();
+    }
   }, [countries]);
 
   useEffect(() => {

@@ -10,7 +10,6 @@ const UserProvider = ({ children }: { children: React.ReactNode }) => {
     reqCurrent: '',
     reqLimit: '',
     plan: '',
-    key: '',
     isLogged: false,
   };
 
