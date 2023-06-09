@@ -193,7 +193,6 @@ const Form = () => {
 
         if (country && season) {
           const { data } = await leagues(country, season);
-          console.log(data);
 
           setDataLeaguesApi((prevData) => {
             const transformDataForSelect = data.map(
@@ -236,6 +235,8 @@ const Form = () => {
 
         if (country && season && league) {
           const { data } = await teams(country, season, league);
+
+          console.log(data);
 
           setDataTeamsApi((prevData) => {
             const transformDataForSelect = data.map(

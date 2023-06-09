@@ -15,7 +15,7 @@ const Dashboard = () => {
   const { user } = useUserContext();
   const { teamStatistics, teamPlayers } = useFetch();
   const { getStorage, setStorage } = useLocalStorage();
-  const [playersInfo, setPlayersInfo] = useState<PlayerData[]>([]);
+  const [playersInfo, setPlayersInfo] = useState([]);
   const [teamInfo, setTeamInfo] = useState<TeamInfo>({
     teamName: '',
     teamLogo: '',
@@ -27,7 +27,8 @@ const Dashboard = () => {
     draws: 0,
     loses: 0,
     lineups: [],
-    goals: [],
+    goalsPerMinute: {},
+    goalsTotal: {},
   });
 
   const { season, league, team } = getStorage();
@@ -35,6 +36,7 @@ const Dashboard = () => {
   const getStatistics = useCallback(async () => {
     try {
       const { data } = await teamStatistics(season, league, team);
+
       setTeamInfo((prevState) => {
         return {
           ...prevState,
@@ -48,7 +50,8 @@ const Dashboard = () => {
           draws: data.fixtures.draws.total,
           loses: data.fixtures.loses.total,
           lineups: data.lineups,
-          goals: data.goals.for.minute,
+          goalsPerMinute: data.goals.for.minute,
+          goalsTotal: data.goals.for.total,
         };
       });
     } catch (err) {
@@ -83,7 +86,7 @@ const Dashboard = () => {
             position: statistic.games.position,
           }))
       );
-
+      // console.log('Flated: ', formatedData);
       setPlayersInfo(formatedData);
     } catch (err) {
       console.log(err);
@@ -91,7 +94,9 @@ const Dashboard = () => {
   }, [teamPlayers]);
 
   useEffect(() => {
-    setStorage({ hasTeam: true });
+    if (!getStorage().hasTeam) {
+      setStorage({ hasTeam: true });
+    }
     getStatistics();
     getPlayers();
   }, [getStatistics, getPlayers]);
@@ -154,7 +159,10 @@ const Dashboard = () => {
           <div className="grid grid-cols-3 mb-16 gap-x-4">
             <div className="col-span-2">
               <h2 className="text-xl font-semibold mb-4">Gols marcados</h2>
-              <GoalsChart goals={teamInfo.goals} />
+              <GoalsChart
+                goalsPerMinute={teamInfo.goalsPerMinute}
+                goalsTotal={teamInfo.goalsTotal}
+              />
             </div>
             <div>
               <h2 className="text-xl font-semibold mb-4">
@@ -166,7 +174,7 @@ const Dashboard = () => {
 
           <h2 className="text-2xl font-semibold mb-4">Jogadores</h2>
           <div className="grid grid-cols-5 gap-3">
-            {playersInfo.map((player) => (
+            {playersInfo.map((player: PlayerData) => (
               <PlayerCard key={player.id} player={player} />
             ))}
           </div>

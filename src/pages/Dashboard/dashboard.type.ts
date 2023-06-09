@@ -3,14 +3,9 @@ export type PlayerData = {
   name: string;
   age: number;
   nationality: string;
-  height: number;
-  weight: number;
+  height: string;
+  weight: string;
   photo: string;
-  captain: boolean;
-  goals: number;
-  position: string;
-  yellow: number;
-  red: number;
 };
 
 export type StatisticsData = {
@@ -27,21 +22,33 @@ export type StatisticsData = {
   };
 };
 
+export type GoalsPerMinute = Record<
+  string,
+  { total: number; percentage: string }
+>;
+
+export type GoalsTotal = {
+  home?: number;
+  away?: number;
+  total?: number;
+};
+
+export type Lineups = {
+  formation?: string;
+  played?: number;
+}[];
+
 export type TeamInfo = {
   teamName: string;
-  teamLogo: string;
+  teamLogo: string | undefined;
   leagueName: string;
-  leagueLogo: string;
+  leagueLogo: string | undefined;
   leagueSeason: string;
   playedTotal: number;
   wins: number;
   draws: number;
   loses: number;
-  lineups: {
-    formation: string;
-    played: number;
-  }[];
-  goals: {
-    total: number;
-  }[];
+  lineups: Lineups;
+  goalsPerMinute: GoalsPerMinute;
+  goalsTotal: GoalsTotal;
 };

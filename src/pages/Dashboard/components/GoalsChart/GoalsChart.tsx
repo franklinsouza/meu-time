@@ -10,13 +10,17 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 
-type GoalsChartProps = {
-  total: number;
-};
+import { GoalsPerMinute, GoalsTotal } from '../../dashboard.type';
 
-const GoalsChart = ({ goals }: { goals: GoalsChartProps[] }) => {
-  const times = Object.keys(goals);
-  const dataGoals = Object.values(goals).map((goal) => goal.total);
+const GoalsChart = ({
+  goalsPerMinute,
+  goalsTotal,
+}: {
+  goalsPerMinute: GoalsPerMinute;
+  goalsTotal: GoalsTotal;
+}) => {
+  const times = Object.keys(goalsPerMinute);
+  const dataGoals = Object.values(goalsPerMinute).map(({ total }) => total);
 
   ChartJS.register(
     CategoryScale,
@@ -72,13 +76,13 @@ const GoalsChart = ({ goals }: { goals: GoalsChartProps[] }) => {
     <>
       <div className="bg-[#222027] flex p-3 text-sm gap-x-3 border border-t-1 border-r-1 border-l-1 border-[#232127]">
         <p className="opacity-60">
-          <span>Em casa:</span> 40
+          <span>Em casa:</span> {goalsTotal.home}
         </p>
         <p className="opacity-60">
-          <span>Fora:</span> 40
+          <span>Fora:</span> {goalsTotal.away}
         </p>
         <p className="opacity-60">
-          <span>Total:</span> 80
+          <span>Total:</span> {goalsTotal.total}
         </p>
       </div>
 

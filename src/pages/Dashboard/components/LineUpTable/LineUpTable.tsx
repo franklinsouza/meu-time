@@ -1,9 +1,6 @@
-type LineUpProps = {
-  formation: string;
-  played: number;
-};
+import { Lineups } from '../../dashboard.type';
 
-const LineUpTable = ({ lineups }: { lineups: LineUpProps[] }) => {
+const LineUpTable = ({ lineups }: { lineups: Lineups }) => {
   return (
     <table className="table-auto w-full bg-secondary-01">
       <thead className="bg-[#222027]">

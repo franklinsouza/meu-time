@@ -7,8 +7,6 @@ const useFetch = () => {
     const res = await fetch(url, options);
     const json = await res.json();
 
-    console.log(json);
-
     if (json.errors.token) {
       throw new Error('Key não existente');
     }
@@ -75,7 +73,6 @@ const useFetch = () => {
 
     const data = json.response;
 
-    console.log(data);
     return { data };
 
     // const res = await fetch('http://localhost:3000/leagues');
@@ -101,7 +98,7 @@ const useFetch = () => {
 
       return { data };
 
-      // const res = await fetch('http://localhost:3000/leagues');
+      // const res = await fetch('http://localhost:3000/teams');
       // const json = await res.json();
       // const data = json.response;
       // return { data };
