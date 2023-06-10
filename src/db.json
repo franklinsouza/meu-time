@@ -1380,9 +1380,9 @@
   "team-statistics": {
     "get": "teams/statistics",
     "parameters": {
-      "season": "2011",
-      "league": "186",
-      "team": "928"
+      "season": "2019",
+      "league": "39",
+      "team": "33"
     },
     "errors": [],
     "results": 11,
@@ -1392,81 +1392,81 @@
     },
     "response": {
       "league": {
-        "id": 186,
-        "name": "Ligue 1",
-        "country": "Algeria",
-        "logo": "https://media-3.api-sports.io/football/leagues/186.png",
-        "flag": "https://media-3.api-sports.io/flags/dz.svg",
-        "season": 2011
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+        "flag": "https://media-3.api-sports.io/flags/gb.svg",
+        "season": 2019
       },
       "team": {
-        "id": 928,
-        "name": "WA Tlemcen",
-        "logo": "https://media-3.api-sports.io/football/teams/928.png"
+        "id": 33,
+        "name": "Manchester United",
+        "logo": "https://media-2.api-sports.io/football/teams/33.png"
       },
-      "form": "DLDWWDDDDDLWLWWWWDLWLWLWLWLLLW",
+      "form": "WDLDWLDLDWLWDDWWDLWWLWLLDWWDWDWWWWDWDW",
       "fixtures": {
         "played": {
-          "home": 15,
-          "away": 15,
-          "total": 30
+          "home": 19,
+          "away": 19,
+          "total": 38
         },
         "wins": {
-          "home": 9,
-          "away": 3,
-          "total": 12
+          "home": 10,
+          "away": 8,
+          "total": 18
         },
         "draws": {
-          "home": 5,
-          "away": 3,
-          "total": 8
+          "home": 7,
+          "away": 5,
+          "total": 12
         },
         "loses": {
-          "home": 1,
-          "away": 9,
-          "total": 10
+          "home": 2,
+          "away": 6,
+          "total": 8
         }
       },
       "goals": {
         "for": {
           "total": {
-            "home": 27,
-            "away": 12,
-            "total": 39
+            "home": 40,
+            "away": 26,
+            "total": 66
           },
           "average": {
-            "home": "1.8",
-            "away": "0.8",
-            "total": "1.3"
+            "home": "2.1",
+            "away": "1.4",
+            "total": "1.7"
           },
           "minute": {
             "0-15": {
-              "total": 7,
-              "percentage": "17.95%"
+              "total": 4,
+              "percentage": "6.06%"
             },
             "16-30": {
-              "total": 7,
-              "percentage": "17.95%"
+              "total": 17,
+              "percentage": "25.76%"
             },
             "31-45": {
-              "total": 3,
-              "percentage": "7.69%"
+              "total": 11,
+              "percentage": "16.67%"
             },
             "46-60": {
-              "total": 6,
-              "percentage": "15.38%"
+              "total": 13,
+              "percentage": "19.70%"
             },
             "61-75": {
-              "total": 7,
-              "percentage": "17.95%"
+              "total": 10,
+              "percentage": "15.15%"
             },
             "76-90": {
               "total": 8,
-              "percentage": "20.51%"
+              "percentage": "12.12%"
             },
             "91-105": {
-              "total": 1,
-              "percentage": "2.56%"
+              "total": 3,
+              "percentage": "4.55%"
             },
             "106-120": {
               "total": null,
@@ -1476,43 +1476,43 @@
         },
         "against": {
           "total": {
-            "home": 15,
-            "away": 22,
-            "total": 37
+            "home": 17,
+            "away": 19,
+            "total": 36
           },
           "average": {
-            "home": "1.0",
-            "away": "1.5",
-            "total": "1.2"
+            "home": "0.9",
+            "away": "1.0",
+            "total": "0.9"
           },
           "minute": {
             "0-15": {
-              "total": 7,
-              "percentage": "18.92%"
+              "total": 6,
+              "percentage": "16.67%"
             },
             "16-30": {
-              "total": 4,
-              "percentage": "10.81%"
+              "total": 3,
+              "percentage": "8.33%"
             },
             "31-45": {
-              "total": 5,
-              "percentage": "13.51%"
+              "total": 7,
+              "percentage": "19.44%"
             },
             "46-60": {
-              "total": 4,
-              "percentage": "10.81%"
+              "total": 9,
+              "percentage": "25.00%"
             },
             "61-75": {
-              "total": 4,
-              "percentage": "10.81%"
+              "total": 3,
+              "percentage": "8.33%"
             },
             "76-90": {
-              "total": 11,
-              "percentage": "29.73%"
+              "total": 5,
+              "percentage": "13.89%"
             },
             "91-105": {
-              "total": 2,
-              "percentage": "5.41%"
+              "total": 3,
+              "percentage": "8.33%"
             },
             "106-120": {
               "total": null,
@@ -1524,75 +1524,92 @@
       "biggest": {
         "streak": {
           "wins": 4,
-          "draws": 5,
-          "loses": 3
+          "draws": 2,
+          "loses": 2
         },
         "wins": {
-          "home": "4-2",
-          "away": "1-3"
+          "home": "4-0",
+          "away": "0-3"
         },
         "loses": {
-          "home": "2-3",
-          "away": "3-0"
+          "home": "0-2",
+          "away": "2-0"
         },
         "goals": {
           "for": {
-            "home": 4,
+            "home": 5,
             "away": 3
           },
           "against": {
-            "home": 3,
+            "home": 2,
             "away": 3
           }
         }
       },
       "clean_sheet": {
-        "home": 5,
-        "away": 4,
-        "total": 9
+        "home": 7,
+        "away": 6,
+        "total": 13
       },
       "failed_to_score": {
-        "home": 1,
+        "home": 2,
         "away": 6,
-        "total": 7
+        "total": 8
       },
       "penalty": {
         "scored": {
-          "total": 6,
+          "total": 10,
           "percentage": "100.00%"
         },
         "missed": {
           "total": 0,
           "percentage": "0%"
         },
-        "total": 6
+        "total": 10
       },
-      "lineups": [],
+      "lineups": [
+        {
+          "formation": "4-2-3-1",
+          "played": 32
+        },
+        {
+          "formation": "3-4-1-2",
+          "played": 4
+        },
+        {
+          "formation": "3-4-2-1",
+          "played": 1
+        },
+        {
+          "formation": "4-3-1-2",
+          "played": 1
+        }
+      ],
       "cards": {
         "yellow": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 5,
+            "percentage": "6.85%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 5,
+            "percentage": "6.85%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 16,
+            "percentage": "21.92%"
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 12,
+            "percentage": "16.44%"
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 14,
+            "percentage": "19.18%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 21,
+            "percentage": "28.77%"
           },
           "91-105": {
             "total": null,
@@ -1643,9 +1660,9 @@
   "players": {
     "get": "players",
     "parameters": {
-      "season": "2011",
-      "league": "186",
-      "team": "928"
+      "season": "2019",
+      "league": "39",
+      "team": "33"
     },
     "errors": [],
     "results": 20,
@@ -1656,145 +1673,50 @@
     "response": [
       {
         "player": {
-          "id": 212343,
-          "name": "Abou El Kacem Hadji",
-          "firstname": "Abou El Kacem",
-          "lastname": "Hadji",
-          "age": 26,
+          "id": 883,
+          "name": "Lee Grant",
+          "firstname": "Lee",
+          "lastname": "Grant",
+          "age": 39,
           "birth": {
-            "date": "1990-08-22",
-            "place": "Oujda",
-            "country": "Morocco"
+            "date": "1983-01-27",
+            "place": "Hemel Hempstead",
+            "country": "England"
           },
-          "nationality": "Algeria",
-          "height": null,
-          "weight": null,
+          "nationality": "England",
+          "height": "193 cm",
+          "weight": "83 kg",
           "injured": false,
-          "photo": "https://media-2.api-sports.io/football/players/212343.png"
+          "photo": "https://media-2.api-sports.io/football/players/883.png"
         },
         "statistics": [
           {
             "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-2.api-sports.io/football/teams/928.png"
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-3.api-sports.io/football/teams/33.png"
             },
             "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-3.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-3.api-sports.io/flags/dz.svg",
-              "season": 2011
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-3.api-sports.io/flags/gb.svg",
+              "season": 2019
             },
             "games": {
-              "appearences": 8,
-              "lineups": 3,
-              "minutes": 304,
+              "appearences": 0,
+              "lineups": 0,
+              "minutes": 0,
               "number": null,
-              "position": "Midfielder",
+              "position": "Goalkeeper",
               "rating": null,
               "captain": false
             },
             "substitutes": {
-              "in": 5,
-              "out": 3,
-              "bench": 0
-            },
-            "shots": {
-              "total": null,
-              "on": null
-            },
-            "goals": {
-              "total": 0,
-              "conceded": null,
-              "assists": null,
-              "saves": null
-            },
-            "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
-            },
-            "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
-            },
-            "duels": {
-              "total": null,
-              "won": null
-            },
-            "dribbles": {
-              "attempts": null,
-              "success": null,
-              "past": null
-            },
-            "fouls": {
-              "drawn": null,
-              "committed": null
-            },
-            "cards": {
-              "yellow": 1,
-              "yellowred": 0,
-              "red": 0
-            },
-            "penalty": {
-              "won": null,
-              "commited": null,
-              "scored": null,
-              "missed": null,
-              "saved": null
-            }
-          }
-        ]
-      },
-      {
-        "player": {
-          "id": 212548,
-          "name": "Amine Tiza",
-          "firstname": "Amine",
-          "lastname": "Tiza",
-          "age": 24,
-          "birth": {
-            "date": "1990-07-20",
-            "place": "Alger",
-            "country": "Algeria"
-          },
-          "nationality": "Algeria",
-          "height": "180 cm",
-          "weight": "70 kg",
-          "injured": false,
-          "photo": "https://media-3.api-sports.io/football/players/212548.png"
-        },
-        "statistics": [
-          {
-            "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-1.api-sports.io/football/teams/928.png"
-            },
-            "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-1.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-2.api-sports.io/flags/dz.svg",
-              "season": 2011
-            },
-            "games": {
-              "appearences": 22,
-              "lineups": 20,
-              "minutes": 1848,
-              "number": null,
-              "position": "Defender",
-              "rating": null,
-              "captain": false
-            },
-            "substitutes": {
-              "in": 2,
+              "in": 0,
               "out": 0,
-              "bench": 0
+              "bench": 3
             },
             "shots": {
               "total": null,
@@ -1802,196 +1724,6 @@
             },
             "goals": {
               "total": 0,
-              "conceded": null,
-              "assists": null,
-              "saves": null
-            },
-            "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
-            },
-            "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
-            },
-            "duels": {
-              "total": null,
-              "won": null
-            },
-            "dribbles": {
-              "attempts": null,
-              "success": null,
-              "past": null
-            },
-            "fouls": {
-              "drawn": null,
-              "committed": null
-            },
-            "cards": {
-              "yellow": 4,
-              "yellowred": 0,
-              "red": 0
-            },
-            "penalty": {
-              "won": null,
-              "commited": null,
-              "scored": null,
-              "missed": null,
-              "saved": null
-            }
-          }
-        ]
-      },
-      {
-        "player": {
-          "id": 212586,
-          "name": "Rabie Belgherri",
-          "firstname": "Rabie",
-          "lastname": "Belgherri",
-          "age": 36,
-          "birth": {
-            "date": "1977-7-10",
-            "place": "Maghnia",
-            "country": "Algeria"
-          },
-          "nationality": "Algeria",
-          "height": "173 cm",
-          "weight": "69 kg",
-          "injured": false,
-          "photo": "https://media-2.api-sports.io/football/players/212586.png"
-        },
-        "statistics": [
-          {
-            "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-1.api-sports.io/football/teams/928.png"
-            },
-            "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-3.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-3.api-sports.io/flags/dz.svg",
-              "season": 2011
-            },
-            "games": {
-              "appearences": 27,
-              "lineups": 23,
-              "minutes": 2054,
-              "number": null,
-              "position": "Midfielder",
-              "rating": null,
-              "captain": false
-            },
-            "substitutes": {
-              "in": 4,
-              "out": 7,
-              "bench": 0
-            },
-            "shots": {
-              "total": null,
-              "on": null
-            },
-            "goals": {
-              "total": 4,
-              "conceded": null,
-              "assists": null,
-              "saves": null
-            },
-            "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
-            },
-            "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
-            },
-            "duels": {
-              "total": null,
-              "won": null
-            },
-            "dribbles": {
-              "attempts": null,
-              "success": null,
-              "past": null
-            },
-            "fouls": {
-              "drawn": null,
-              "committed": null
-            },
-            "cards": {
-              "yellow": 3,
-              "yellowred": 1,
-              "red": 0
-            },
-            "penalty": {
-              "won": null,
-              "commited": null,
-              "scored": null,
-              "missed": null,
-              "saved": null
-            }
-          }
-        ]
-      },
-      {
-        "player": {
-          "id": 212600,
-          "name": "Rachid Taouil",
-          "firstname": "Rachid",
-          "lastname": "Taouil",
-          "age": 24,
-          "birth": {
-            "date": "1990-01-14",
-            "place": "Oran",
-            "country": "Algeria"
-          },
-          "nationality": "Algeria",
-          "height": "178 cm",
-          "weight": "68 kg",
-          "injured": false,
-          "photo": "https://media-2.api-sports.io/football/players/212600.png"
-        },
-        "statistics": [
-          {
-            "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-3.api-sports.io/football/teams/928.png"
-            },
-            "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-3.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-2.api-sports.io/flags/dz.svg",
-              "season": 2011
-            },
-            "games": {
-              "appearences": 20,
-              "lineups": 10,
-              "minutes": 978,
-              "number": null,
-              "position": "Attacker",
-              "rating": null,
-              "captain": false
-            },
-            "substitutes": {
-              "in": 10,
-              "out": 4,
-              "bench": 0
-            },
-            "shots": {
-              "total": null,
-              "on": null
-            },
-            "goals": {
-              "total": 1,
               "conceded": null,
               "assists": null,
               "saves": null
@@ -2036,94 +1768,94 @@
       },
       {
         "player": {
-          "id": 212681,
-          "name": "Hicham Benmeghit",
-          "firstname": "Hicham",
-          "lastname": "Benmeghit",
-          "age": 33,
+          "id": 897,
+          "name": "M. Greenwood",
+          "firstname": "Mason Will John",
+          "lastname": "Greenwood",
+          "age": 21,
           "birth": {
-            "date": "1980-06-21",
-            "place": "\n    ",
-            "country": "Algeria"
+            "date": "2001-10-01",
+            "place": "Bradford",
+            "country": "England"
           },
-          "nationality": "Algeria",
-          "height": "\n    ",
-          "weight": "\n    ",
+          "nationality": "England",
+          "height": "181 cm",
+          "weight": "70 kg",
           "injured": false,
-          "photo": "https://media-1.api-sports.io/football/players/212681.png"
+          "photo": "https://media-2.api-sports.io/football/players/897.png"
         },
         "statistics": [
           {
             "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-2.api-sports.io/football/teams/928.png"
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-3.api-sports.io/football/teams/33.png"
             },
             "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-2.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-3.api-sports.io/flags/dz.svg",
-              "season": 2011
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-2.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-2.api-sports.io/flags/gb.svg",
+              "season": 2019
             },
             "games": {
-              "appearences": 10,
-              "lineups": 8,
-              "minutes": 757,
+              "appearences": 31,
+              "lineups": 12,
+              "minutes": 1310,
               "number": null,
               "position": "Attacker",
-              "rating": null,
+              "rating": "6.934482",
               "captain": false
             },
             "substitutes": {
-              "in": 2,
-              "out": 4,
-              "bench": 0
+              "in": 19,
+              "out": 9,
+              "bench": 25
             },
             "shots": {
-              "total": null,
-              "on": null
+              "total": 39,
+              "on": 20
             },
             "goals": {
-              "total": 2,
+              "total": 10,
               "conceded": null,
-              "assists": null,
+              "assists": 1,
               "saves": null
             },
             "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
+              "total": 427,
+              "key": 14,
+              "accuracy": 84
             },
             "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
+              "total": 17,
+              "blocks": 0,
+              "interceptions": 6
             },
             "duels": {
-              "total": null,
-              "won": null
+              "total": 122,
+              "won": 51
             },
             "dribbles": {
-              "attempts": null,
-              "success": null,
+              "attempts": 32,
+              "success": 21,
               "past": null
             },
             "fouls": {
-              "drawn": null,
-              "committed": null
+              "drawn": 8,
+              "committed": 12
             },
             "cards": {
-              "yellow": 1,
+              "yellow": 0,
               "yellowred": 0,
               "red": 0
             },
             "penalty": {
               "won": null,
               "commited": null,
-              "scored": null,
-              "missed": null,
+              "scored": 0,
+              "missed": 0,
               "saved": null
             }
           }
@@ -2131,43 +1863,138 @@
       },
       {
         "player": {
-          "id": 4702,
-          "name": "Sid Ahmed Rafik Mazouzi",
-          "firstname": "Sid Ahmed Rafik",
-          "lastname": "Mazouzi",
-          "age": 31,
+          "id": 895,
+          "name": "J. Garner",
+          "firstname": "James David",
+          "lastname": "Garner",
+          "age": 22,
           "birth": {
-            "date": "1989-02-01",
-            "place": "Kouba",
-            "country": "Algeria"
+            "date": "2001-03-13",
+            "place": "Birkenhead",
+            "country": "England"
           },
-          "nationality": "Algeria",
-          "height": null,
-          "weight": null,
+          "nationality": "England",
+          "height": "186 cm",
+          "weight": "78 kg",
           "injured": false,
-          "photo": "https://media-3.api-sports.io/football/players/4702.png"
+          "photo": "https://media-1.api-sports.io/football/players/895.png"
         },
         "statistics": [
           {
             "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-2.api-sports.io/football/teams/928.png"
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-2.api-sports.io/football/teams/33.png"
             },
             "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-2.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-1.api-sports.io/flags/dz.svg",
-              "season": 2011
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-2.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-3.api-sports.io/flags/gb.svg",
+              "season": 2019
             },
             "games": {
-              "appearences": 19,
-              "lineups": 19,
-              "minutes": 1710,
+              "appearences": 1,
+              "lineups": 0,
+              "minutes": 8,
               "number": null,
-              "position": "Goalkeeper",
+              "position": "Midfielder",
+              "rating": "6.500000",
+              "captain": false
+            },
+            "substitutes": {
+              "in": 1,
+              "out": 0,
+              "bench": 7
+            },
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": null,
+              "assists": null,
+              "saves": null
+            },
+            "passes": {
+              "total": 14,
+              "key": 0,
+              "accuracy": 100
+            },
+            "tackles": {
+              "total": null,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 2,
+              "won": 1
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": null
+            },
+            "fouls": {
+              "drawn": 1,
+              "committed": 0
+            },
+            "cards": {
+              "yellow": 0,
+              "yellowred": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": null,
+              "commited": null,
+              "scored": 0,
+              "missed": 0,
+              "saved": null
+            }
+          }
+        ]
+      },
+      {
+        "player": {
+          "id": 138809,
+          "name": "Arnau Puigmal",
+          "firstname": "Arnau",
+          "lastname": "Puigmal Mart\u00ednez",
+          "age": 22,
+          "birth": {
+            "date": "2001-01-10",
+            "place": null,
+            "country": "Spain"
+          },
+          "nationality": "Spain",
+          "height": "173 cm",
+          "weight": "69 kg",
+          "injured": false,
+          "photo": "https://media-1.api-sports.io/football/players/138809.png"
+        },
+        "statistics": [
+          {
+            "team": {
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-2.api-sports.io/football/teams/33.png"
+            },
+            "league": {
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-2.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-1.api-sports.io/flags/gb.svg",
+              "season": 2019
+            },
+            "games": {
+              "appearences": 0,
+              "lineups": 0,
+              "minutes": 0,
+              "number": null,
+              "position": "Midfielder",
               "rating": null,
               "captain": false
             },
@@ -2208,6 +2035,671 @@
             "fouls": {
               "drawn": null,
               "committed": null
+            },
+            "cards": {
+              "yellow": 0,
+              "yellowred": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": null,
+              "commited": null,
+              "scored": null,
+              "missed": null,
+              "saved": null
+            }
+          }
+        ]
+      },
+      {
+        "player": {
+          "id": 899,
+          "name": "Andreas Pereira",
+          "firstname": "Andreas Hugo",
+          "lastname": "Hoelgebaum Pereira",
+          "age": 27,
+          "birth": {
+            "date": "1996-01-01",
+            "place": "Duffel",
+            "country": "Belgium"
+          },
+          "nationality": "Brazil",
+          "height": "178 cm",
+          "weight": "71 kg",
+          "injured": false,
+          "photo": "https://media-2.api-sports.io/football/players/899.png"
+        },
+        "statistics": [
+          {
+            "team": {
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-3.api-sports.io/football/teams/33.png"
+            },
+            "league": {
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-1.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-1.api-sports.io/flags/gb.svg",
+              "season": 2019
+            },
+            "games": {
+              "appearences": 25,
+              "lineups": 18,
+              "minutes": 1490,
+              "number": null,
+              "position": "Midfielder",
+              "rating": "6.633333",
+              "captain": false
+            },
+            "substitutes": {
+              "in": 7,
+              "out": 13,
+              "bench": 14
+            },
+            "shots": {
+              "total": 37,
+              "on": 14
+            },
+            "goals": {
+              "total": 1,
+              "conceded": null,
+              "assists": 3,
+              "saves": null
+            },
+            "passes": {
+              "total": 551,
+              "key": 32,
+              "accuracy": 78
+            },
+            "tackles": {
+              "total": 24,
+              "blocks": 0,
+              "interceptions": 7
+            },
+            "duels": {
+              "total": 212,
+              "won": 70
+            },
+            "dribbles": {
+              "attempts": 33,
+              "success": 20,
+              "past": null
+            },
+            "fouls": {
+              "drawn": 16,
+              "committed": 27
+            },
+            "cards": {
+              "yellow": 3,
+              "yellowred": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": null,
+              "commited": null,
+              "scored": 0,
+              "missed": 0,
+              "saved": null
+            }
+          }
+        ]
+      },
+      {
+        "player": {
+          "id": 19182,
+          "name": "A. Tuanzebe",
+          "firstname": "Axel",
+          "lastname": "Tuanzebe",
+          "age": 26,
+          "birth": {
+            "date": "1997-11-14",
+            "place": "Bunia",
+            "country": "Congo DR"
+          },
+          "nationality": "England",
+          "height": "186 cm",
+          "weight": "75 kg",
+          "injured": false,
+          "photo": "https://media-3.api-sports.io/football/players/19182.png"
+        },
+        "statistics": [
+          {
+            "team": {
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-3.api-sports.io/football/teams/33.png"
+            },
+            "league": {
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-1.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-1.api-sports.io/flags/gb.svg",
+              "season": 2019
+            },
+            "games": {
+              "appearences": 5,
+              "lineups": 2,
+              "minutes": 186,
+              "number": null,
+              "position": "Defender",
+              "rating": "6.100000",
+              "captain": false
+            },
+            "substitutes": {
+              "in": 3,
+              "out": 0,
+              "bench": 12
+            },
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": null,
+              "assists": null,
+              "saves": null
+            },
+            "passes": {
+              "total": 120,
+              "key": 0,
+              "accuracy": 71
+            },
+            "tackles": {
+              "total": 2,
+              "blocks": 0,
+              "interceptions": 5
+            },
+            "duels": {
+              "total": 28,
+              "won": 8
+            },
+            "dribbles": {
+              "attempts": 3,
+              "success": 0,
+              "past": null
+            },
+            "fouls": {
+              "drawn": 3,
+              "committed": 3
+            },
+            "cards": {
+              "yellow": 0,
+              "yellowred": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": null,
+              "commited": null,
+              "scored": 0,
+              "missed": 0,
+              "saved": null
+            }
+          }
+        ]
+      },
+      {
+        "player": {
+          "id": 906,
+          "name": "T. Chong",
+          "firstname": "Tahith Jose",
+          "lastname": "Chong",
+          "age": 24,
+          "birth": {
+            "date": "1999-12-04",
+            "place": "Willemstad",
+            "country": "Cura\u00e7ao"
+          },
+          "nationality": "Netherlands",
+          "height": "185 cm",
+          "weight": "75 kg",
+          "injured": false,
+          "photo": "https://media-3.api-sports.io/football/players/906.png"
+        },
+        "statistics": [
+          {
+            "team": {
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-2.api-sports.io/football/teams/33.png"
+            },
+            "league": {
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-1.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-1.api-sports.io/flags/gb.svg",
+              "season": 2019
+            },
+            "games": {
+              "appearences": 3,
+              "lineups": 0,
+              "minutes": 34,
+              "number": null,
+              "position": "Midfielder",
+              "rating": "6.433333",
+              "captain": false
+            },
+            "substitutes": {
+              "in": 3,
+              "out": 0,
+              "bench": 7
+            },
+            "shots": {
+              "total": 1,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": null,
+              "assists": null,
+              "saves": null
+            },
+            "passes": {
+              "total": 9,
+              "key": 0,
+              "accuracy": 76
+            },
+            "tackles": {
+              "total": null,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 8,
+              "won": 2
+            },
+            "dribbles": {
+              "attempts": 2,
+              "success": 1,
+              "past": null
+            },
+            "fouls": {
+              "drawn": 1,
+              "committed": 2
+            },
+            "cards": {
+              "yellow": 0,
+              "yellowred": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": null,
+              "commited": null,
+              "scored": 0,
+              "missed": 0,
+              "saved": null
+            }
+          }
+        ]
+      },
+      {
+        "player": {
+          "id": 900,
+          "name": "J. Lingard",
+          "firstname": "Jesse Ellis",
+          "lastname": "Lingard",
+          "age": 31,
+          "birth": {
+            "date": "1992-12-15",
+            "place": "Warrington",
+            "country": "England"
+          },
+          "nationality": "England",
+          "height": "175 cm",
+          "weight": "62 kg",
+          "injured": false,
+          "photo": "https://media-2.api-sports.io/football/players/900.png"
+        },
+        "statistics": [
+          {
+            "team": {
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-3.api-sports.io/football/teams/33.png"
+            },
+            "league": {
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-2.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-1.api-sports.io/flags/gb.svg",
+              "season": 2019
+            },
+            "games": {
+              "appearences": 22,
+              "lineups": 9,
+              "minutes": 931,
+              "number": null,
+              "position": "Midfielder",
+              "rating": "6.619047",
+              "captain": false
+            },
+            "substitutes": {
+              "in": 13,
+              "out": 9,
+              "bench": 17
+            },
+            "shots": {
+              "total": 22,
+              "on": 6
+            },
+            "goals": {
+              "total": 1,
+              "conceded": null,
+              "assists": null,
+              "saves": null
+            },
+            "passes": {
+              "total": 343,
+              "key": 20,
+              "accuracy": 89
+            },
+            "tackles": {
+              "total": 15,
+              "blocks": 0,
+              "interceptions": 3
+            },
+            "duels": {
+              "total": 113,
+              "won": 41
+            },
+            "dribbles": {
+              "attempts": 23,
+              "success": 13,
+              "past": null
+            },
+            "fouls": {
+              "drawn": 11,
+              "committed": 28
+            },
+            "cards": {
+              "yellow": 3,
+              "yellowred": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": null,
+              "commited": null,
+              "scored": 0,
+              "missed": 0,
+              "saved": null
+            }
+          }
+        ]
+      },
+      {
+        "player": {
+          "id": 894,
+          "name": "A. Young",
+          "firstname": "Ashley Simon",
+          "lastname": "Young",
+          "age": 38,
+          "birth": {
+            "date": "1985-07-09",
+            "place": "Stevenage",
+            "country": "England"
+          },
+          "nationality": "England",
+          "height": "175 cm",
+          "weight": "65 kg",
+          "injured": false,
+          "photo": "https://media-3.api-sports.io/football/players/894.png"
+        },
+        "statistics": [
+          {
+            "team": {
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-1.api-sports.io/football/teams/33.png"
+            },
+            "league": {
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-1.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-1.api-sports.io/flags/gb.svg",
+              "season": 2019
+            },
+            "games": {
+              "appearences": 12,
+              "lineups": 10,
+              "minutes": 954,
+              "number": null,
+              "position": "Defender",
+              "rating": "6.933333",
+              "captain": false
+            },
+            "substitutes": {
+              "in": 2,
+              "out": 1,
+              "bench": 10
+            },
+            "shots": {
+              "total": 3,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": null,
+              "assists": null,
+              "saves": null
+            },
+            "passes": {
+              "total": 460,
+              "key": 19,
+              "accuracy": 71
+            },
+            "tackles": {
+              "total": 14,
+              "blocks": 2,
+              "interceptions": 11
+            },
+            "duels": {
+              "total": 97,
+              "won": 50
+            },
+            "dribbles": {
+              "attempts": 14,
+              "success": 7,
+              "past": null
+            },
+            "fouls": {
+              "drawn": 16,
+              "committed": 14
+            },
+            "cards": {
+              "yellow": 5,
+              "yellowred": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": null,
+              "commited": null,
+              "scored": 0,
+              "missed": 0,
+              "saved": null
+            }
+          }
+        ]
+      },
+      {
+        "player": {
+          "id": 902,
+          "name": "N. Mati\u0107",
+          "firstname": "Nemanja",
+          "lastname": "Mati\u0107",
+          "age": 35,
+          "birth": {
+            "date": "1988-08-01",
+            "place": "\u0160abac",
+            "country": "Serbia"
+          },
+          "nationality": "Serbia",
+          "height": "194 cm",
+          "weight": "85 kg",
+          "injured": false,
+          "photo": "https://media-3.api-sports.io/football/players/902.png"
+        },
+        "statistics": [
+          {
+            "team": {
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-2.api-sports.io/football/teams/33.png"
+            },
+            "league": {
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-3.api-sports.io/flags/gb.svg",
+              "season": 2019
+            },
+            "games": {
+              "appearences": 21,
+              "lineups": 18,
+              "minutes": 1583,
+              "number": null,
+              "position": "Midfielder",
+              "rating": "7.000000",
+              "captain": false
+            },
+            "substitutes": {
+              "in": 3,
+              "out": 5,
+              "bench": 9
+            },
+            "shots": {
+              "total": 7,
+              "on": 2
+            },
+            "goals": {
+              "total": 0,
+              "conceded": null,
+              "assists": 2,
+              "saves": null
+            },
+            "passes": {
+              "total": 1100,
+              "key": 15,
+              "accuracy": 85
+            },
+            "tackles": {
+              "total": 46,
+              "blocks": 8,
+              "interceptions": 22
+            },
+            "duels": {
+              "total": 203,
+              "won": 110
+            },
+            "dribbles": {
+              "attempts": 24,
+              "success": 20,
+              "past": null
+            },
+            "fouls": {
+              "drawn": 18,
+              "committed": 27
+            },
+            "cards": {
+              "yellow": 3,
+              "yellowred": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": null,
+              "commited": null,
+              "scored": 0,
+              "missed": 0,
+              "saved": null
+            }
+          }
+        ]
+      },
+      {
+        "player": {
+          "id": 882,
+          "name": "David de Gea",
+          "firstname": "David",
+          "lastname": "de Gea Quintana",
+          "age": 33,
+          "birth": {
+            "date": "1990-11-07",
+            "place": "Madrid",
+            "country": "Spain"
+          },
+          "nationality": "Spain",
+          "height": "192 cm",
+          "weight": "76 kg",
+          "injured": false,
+          "photo": "https://media-3.api-sports.io/football/players/882.png"
+        },
+        "statistics": [
+          {
+            "team": {
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-1.api-sports.io/football/teams/33.png"
+            },
+            "league": {
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-2.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-1.api-sports.io/flags/gb.svg",
+              "season": 2019
+            },
+            "games": {
+              "appearences": 38,
+              "lineups": 38,
+              "minutes": 3420,
+              "number": null,
+              "position": "Goalkeeper",
+              "rating": "6.910526",
+              "captain": false
+            },
+            "substitutes": {
+              "in": 0,
+              "out": 0,
+              "bench": 0
+            },
+            "shots": {
+              "total": 0,
+              "on": 0
+            },
+            "goals": {
+              "total": 0,
+              "conceded": 36,
+              "assists": null,
+              "saves": 96
+            },
+            "passes": {
+              "total": 585,
+              "key": 0,
+              "accuracy": 75
+            },
+            "tackles": {
+              "total": null,
+              "blocks": 0,
+              "interceptions": 0
+            },
+            "duels": {
+              "total": 13,
+              "won": 13
+            },
+            "dribbles": {
+              "attempts": 0,
+              "success": 0,
+              "past": null
+            },
+            "fouls": {
+              "drawn": 6,
+              "committed": 0
             },
             "cards": {
               "yellow": 2,
@@ -2217,63 +2709,63 @@
             "penalty": {
               "won": null,
               "commited": null,
-              "scored": null,
-              "missed": null,
-              "saved": null
+              "scored": 0,
+              "missed": 0,
+              "saved": 0
             }
           }
         ]
       },
       {
         "player": {
-          "id": 212431,
-          "name": "Houari Djemili",
-          "firstname": "Houari",
-          "lastname": "Djemili",
+          "id": 888,
+          "name": "P. Jones",
+          "firstname": "Phil Anthony",
+          "lastname": "Jones",
           "age": 31,
           "birth": {
-            "date": "1987-05-15",
-            "place": "Oran",
-            "country": "Algeria"
+            "date": "1992-02-21",
+            "place": "Preston",
+            "country": "England"
           },
-          "nationality": "Algeria",
-          "height": null,
-          "weight": null,
+          "nationality": "England",
+          "height": "180 cm",
+          "weight": "71 kg",
           "injured": false,
-          "photo": "https://media-3.api-sports.io/football/players/212431.png"
+          "photo": "https://media-1.api-sports.io/football/players/888.png"
         },
         "statistics": [
           {
             "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-3.api-sports.io/football/teams/928.png"
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-2.api-sports.io/football/teams/33.png"
             },
             "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-3.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-2.api-sports.io/flags/dz.svg",
-              "season": 2011
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-1.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-3.api-sports.io/flags/gb.svg",
+              "season": 2019
             },
             "games": {
-              "appearences": 11,
-              "lineups": 11,
-              "minutes": 954,
+              "appearences": 2,
+              "lineups": 2,
+              "minutes": 136,
               "number": null,
-              "position": "Goalkeeper",
-              "rating": null,
+              "position": "Defender",
+              "rating": "6.750000",
               "captain": false
             },
             "substitutes": {
               "in": 0,
               "out": 1,
-              "bench": 0
+              "bench": 10
             },
             "shots": {
-              "total": null,
-              "on": null
+              "total": 2,
+              "on": 1
             },
             "goals": {
               "total": 0,
@@ -2282,122 +2774,27 @@
               "saves": null
             },
             "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
+              "total": 81,
+              "key": 0,
+              "accuracy": 85
             },
             "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
+              "total": 2,
+              "blocks": 0,
+              "interceptions": 2
             },
             "duels": {
-              "total": null,
-              "won": null
+              "total": 26,
+              "won": 17
             },
             "dribbles": {
-              "attempts": null,
-              "success": null,
+              "attempts": 1,
+              "success": 1,
               "past": null
             },
             "fouls": {
-              "drawn": null,
-              "committed": null
-            },
-            "cards": {
-              "yellow": 1,
-              "yellowred": 0,
-              "red": 0
-            },
-            "penalty": {
-              "won": null,
-              "commited": null,
-              "scored": null,
-              "missed": null,
-              "saved": null
-            }
-          }
-        ]
-      },
-      {
-        "player": {
-          "id": 4834,
-          "name": "Zakaria Brixi Reguig",
-          "firstname": "Zakaria",
-          "lastname": "Brixi Reguig",
-          "age": 31,
-          "birth": {
-            "date": "1989-03-14",
-            "place": "Tlemcen",
-            "country": "Algeria"
-          },
-          "nationality": "Algeria",
-          "height": "179 cm",
-          "weight": "66 kg",
-          "injured": false,
-          "photo": "https://media-1.api-sports.io/football/players/4834.png"
-        },
-        "statistics": [
-          {
-            "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-1.api-sports.io/football/teams/928.png"
-            },
-            "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-3.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-3.api-sports.io/flags/dz.svg",
-              "season": 2011
-            },
-            "games": {
-              "appearences": 1,
-              "lineups": 0,
-              "minutes": 36,
-              "number": null,
-              "position": "Goalkeeper",
-              "rating": null,
-              "captain": false
-            },
-            "substitutes": {
-              "in": 1,
-              "out": 0,
-              "bench": 0
-            },
-            "shots": {
-              "total": null,
-              "on": null
-            },
-            "goals": {
-              "total": 0,
-              "conceded": null,
-              "assists": null,
-              "saves": null
-            },
-            "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
-            },
-            "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
-            },
-            "duels": {
-              "total": null,
-              "won": null
-            },
-            "dribbles": {
-              "attempts": null,
-              "success": null,
-              "past": null
-            },
-            "fouls": {
-              "drawn": null,
-              "committed": null
+              "drawn": 1,
+              "committed": 3
             },
             "cards": {
               "yellow": 0,
@@ -2407,8 +2804,8 @@
             "penalty": {
               "won": null,
               "commited": null,
-              "scored": null,
-              "missed": null,
+              "scored": 0,
+              "missed": 0,
               "saved": null
             }
           }
@@ -2416,339 +2813,54 @@
       },
       {
         "player": {
-          "id": 4836,
-          "name": "Housseyn Belhadj",
-          "firstname": "Housseyn",
-          "lastname": "Belhadj",
-          "age": 27,
+          "id": 886,
+          "name": "Diogo Dalot",
+          "firstname": "Jos\u00e9 Diogo",
+          "lastname": "Dalot Teixeira",
+          "age": 24,
           "birth": {
-            "date": "1993-04-30",
-            "place": "Tlemcen",
-            "country": "Algeria"
+            "date": "1999-03-18",
+            "place": "Braga",
+            "country": "Portugal"
           },
-          "nationality": "Algeria",
-          "height": null,
-          "weight": null,
+          "nationality": "Portugal",
+          "height": "183 cm",
+          "weight": "76 kg",
           "injured": false,
-          "photo": "https://media-3.api-sports.io/football/players/4836.png"
+          "photo": "https://media-2.api-sports.io/football/players/886.png"
         },
         "statistics": [
           {
             "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-3.api-sports.io/football/teams/928.png"
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-3.api-sports.io/football/teams/33.png"
             },
             "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-1.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-3.api-sports.io/flags/dz.svg",
-              "season": 2011
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-1.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-2.api-sports.io/flags/gb.svg",
+              "season": 2019
             },
             "games": {
-              "appearences": 1,
-              "lineups": 0,
-              "minutes": 6,
-              "number": null,
-              "position": "Defender",
-              "rating": null,
-              "captain": false
-            },
-            "substitutes": {
-              "in": 1,
-              "out": 0,
-              "bench": 0
-            },
-            "shots": {
-              "total": null,
-              "on": null
-            },
-            "goals": {
-              "total": 0,
-              "conceded": null,
-              "assists": null,
-              "saves": null
-            },
-            "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
-            },
-            "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
-            },
-            "duels": {
-              "total": null,
-              "won": null
-            },
-            "dribbles": {
-              "attempts": null,
-              "success": null,
-              "past": null
-            },
-            "fouls": {
-              "drawn": null,
-              "committed": null
-            },
-            "cards": {
-              "yellow": 0,
-              "yellowred": 0,
-              "red": 0
-            },
-            "penalty": {
-              "won": null,
-              "commited": null,
-              "scored": null,
-              "missed": null,
-              "saved": null
-            }
-          }
-        ]
-      },
-      {
-        "player": {
-          "id": 4837,
-          "name": "Billal Abdessamed Bennaceur",
-          "firstname": "Billal Abdessamed",
-          "lastname": "Bennaceur",
-          "age": 30,
-          "birth": {
-            "date": "1990-06-19",
-            "place": "A\u00cfn T\u00e9mouchent",
-            "country": "Algeria"
-          },
-          "nationality": "Algeria",
-          "height": null,
-          "weight": null,
-          "injured": false,
-          "photo": "https://media-3.api-sports.io/football/players/4837.png"
-        },
-        "statistics": [
-          {
-            "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-3.api-sports.io/football/teams/928.png"
-            },
-            "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-1.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-2.api-sports.io/flags/dz.svg",
-              "season": 2011
-            },
-            "games": {
-              "appearences": 2,
+              "appearences": 4,
               "lineups": 1,
-              "minutes": 121,
+              "minutes": 65,
               "number": null,
               "position": "Defender",
-              "rating": null,
+              "rating": "6.700000",
               "captain": false
             },
             "substitutes": {
-              "in": 1,
-              "out": 0,
-              "bench": 0
-            },
-            "shots": {
-              "total": null,
-              "on": null
-            },
-            "goals": {
-              "total": 0,
-              "conceded": null,
-              "assists": null,
-              "saves": null
-            },
-            "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
-            },
-            "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
-            },
-            "duels": {
-              "total": null,
-              "won": null
-            },
-            "dribbles": {
-              "attempts": null,
-              "success": null,
-              "past": null
-            },
-            "fouls": {
-              "drawn": null,
-              "committed": null
-            },
-            "cards": {
-              "yellow": 1,
-              "yellowred": 0,
-              "red": 0
-            },
-            "penalty": {
-              "won": null,
-              "commited": null,
-              "scored": null,
-              "missed": null,
-              "saved": null
-            }
-          }
-        ]
-      },
-      {
-        "player": {
-          "id": 4838,
-          "name": "Anwar Mohamed Boudjakdji",
-          "firstname": "Anwar Mohamed",
-          "lastname": "Boudjakdji",
-          "age": 44,
-          "birth": {
-            "date": "1976-09-01",
-            "place": "Tlemcen",
-            "country": "Algeria"
-          },
-          "nationality": "Algeria",
-          "height": "190 cm",
-          "weight": "80 kg",
-          "injured": false,
-          "photo": "https://media-2.api-sports.io/football/players/4838.png"
-        },
-        "statistics": [
-          {
-            "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-2.api-sports.io/football/teams/928.png"
-            },
-            "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-1.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-3.api-sports.io/flags/dz.svg",
-              "season": 2011
-            },
-            "games": {
-              "appearences": 27,
-              "lineups": 27,
-              "minutes": 2422,
-              "number": null,
-              "position": "Defender",
-              "rating": null,
-              "captain": false
-            },
-            "substitutes": {
-              "in": 0,
+              "in": 3,
               "out": 1,
-              "bench": 0
+              "bench": 7
             },
             "shots": {
-              "total": null,
-              "on": null
-            },
-            "goals": {
-              "total": 3,
-              "conceded": null,
-              "assists": null,
-              "saves": null
-            },
-            "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
-            },
-            "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
-            },
-            "duels": {
-              "total": null,
-              "won": null
-            },
-            "dribbles": {
-              "attempts": null,
-              "success": null,
-              "past": null
-            },
-            "fouls": {
-              "drawn": null,
-              "committed": null
-            },
-            "cards": {
-              "yellow": 5,
-              "yellowred": 1,
-              "red": 0
-            },
-            "penalty": {
-              "won": null,
-              "commited": null,
-              "scored": null,
-              "missed": null,
-              "saved": null
-            }
-          }
-        ]
-      },
-      {
-        "player": {
-          "id": 4841,
-          "name": "Haroun Kimouche",
-          "firstname": "Haroun",
-          "lastname": "Kimouche",
-          "age": 34,
-          "birth": {
-            "date": "1986-10-16",
-            "place": "Alger",
-            "country": "Algeria"
-          },
-          "nationality": "Algeria",
-          "height": "182 cm",
-          "weight": "73 kg",
-          "injured": false,
-          "photo": "https://media-3.api-sports.io/football/players/4841.png"
-        },
-        "statistics": [
-          {
-            "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-1.api-sports.io/football/teams/928.png"
-            },
-            "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-3.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-3.api-sports.io/flags/dz.svg",
-              "season": 2011
-            },
-            "games": {
-              "appearences": 2,
-              "lineups": 0,
-              "minutes": 46,
-              "number": null,
-              "position": "Defender",
-              "rating": null,
-              "captain": false
-            },
-            "substitutes": {
-              "in": 2,
-              "out": 0,
-              "bench": 0
-            },
-            "shots": {
-              "total": null,
-              "on": null
+              "total": 1,
+              "on": 0
             },
             "goals": {
               "total": 0,
@@ -2757,27 +2869,27 @@
               "saves": null
             },
             "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
+              "total": 38,
+              "key": 0,
+              "accuracy": 57
             },
             "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
+              "total": 3,
+              "blocks": 0,
+              "interceptions": 2
             },
             "duels": {
-              "total": null,
-              "won": null
+              "total": 13,
+              "won": 6
             },
             "dribbles": {
-              "attempts": null,
-              "success": null,
+              "attempts": 3,
+              "success": 0,
               "past": null
             },
             "fouls": {
-              "drawn": null,
-              "committed": null
+              "drawn": 0,
+              "committed": 1
             },
             "cards": {
               "yellow": 0,
@@ -2787,8 +2899,8 @@
             "penalty": {
               "won": null,
               "commited": null,
-              "scored": null,
-              "missed": null,
+              "scored": 0,
+              "missed": 0,
               "saved": null
             }
           }
@@ -2796,94 +2908,94 @@
       },
       {
         "player": {
-          "id": 4846,
-          "name": "Kader Messaoudi",
-          "firstname": "Kader",
-          "lastname": "Messaoudi",
-          "age": 34,
+          "id": 18846,
+          "name": "A. Wan-Bissaka",
+          "firstname": "Aaron",
+          "lastname": "Wan-Bissaka",
+          "age": 26,
           "birth": {
-            "date": "1986-06-15",
-            "place": "S\u00e9tif",
-            "country": "Algeria"
+            "date": "1997-11-26",
+            "place": "London",
+            "country": "England"
           },
-          "nationality": "Algeria",
-          "height": "185 cm",
-          "weight": "70 kg",
+          "nationality": "England",
+          "height": "183 cm",
+          "weight": "72 kg",
           "injured": false,
-          "photo": "https://media-2.api-sports.io/football/players/4846.png"
+          "photo": "https://media-2.api-sports.io/football/players/18846.png"
         },
         "statistics": [
           {
             "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-1.api-sports.io/football/teams/928.png"
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-3.api-sports.io/football/teams/33.png"
             },
             "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-2.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-2.api-sports.io/flags/dz.svg",
-              "season": 2011
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-3.api-sports.io/flags/gb.svg",
+              "season": 2019
             },
             "games": {
-              "appearences": 23,
-              "lineups": 23,
-              "minutes": 2070,
+              "appearences": 35,
+              "lineups": 34,
+              "minutes": 3071,
               "number": null,
               "position": "Defender",
-              "rating": null,
+              "rating": "7.085714",
               "captain": false
             },
             "substitutes": {
-              "in": 0,
-              "out": 0,
-              "bench": 0
+              "in": 1,
+              "out": 2,
+              "bench": 2
             },
             "shots": {
-              "total": null,
-              "on": null
+              "total": 7,
+              "on": 1
             },
             "goals": {
               "total": 0,
               "conceded": null,
-              "assists": null,
+              "assists": 4,
               "saves": null
             },
             "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
+              "total": 1342,
+              "key": 25,
+              "accuracy": 79
             },
             "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
+              "total": 129,
+              "blocks": 13,
+              "interceptions": 66
             },
             "duels": {
-              "total": null,
-              "won": null
+              "total": 374,
+              "won": 226
             },
             "dribbles": {
-              "attempts": null,
-              "success": null,
+              "attempts": 82,
+              "success": 54,
               "past": null
             },
             "fouls": {
-              "drawn": null,
-              "committed": null
+              "drawn": 19,
+              "committed": 21
             },
             "cards": {
-              "yellow": 3,
+              "yellow": 8,
               "yellowred": 0,
               "red": 0
             },
             "penalty": {
               "won": null,
-              "commited": null,
-              "scored": null,
-              "missed": null,
+              "commited": 1,
+              "scored": 0,
+              "missed": 0,
               "saved": null
             }
           }
@@ -2891,529 +3003,54 @@
       },
       {
         "player": {
-          "id": 4848,
-          "name": "Sofiane Belarbi",
-          "firstname": "Sofiane",
-          "lastname": "Belarbi",
-          "age": 31,
+          "id": 138806,
+          "name": "B. Williams",
+          "firstname": "Brandon Paul Brian",
+          "lastname": "Williams",
+          "age": 23,
           "birth": {
-            "date": "1989-10-10",
-            "place": null,
-            "country": "Algeria"
+            "date": "2000-09-03",
+            "place": "Manchester",
+            "country": "England"
           },
-          "nationality": "Algeria",
-          "height": null,
-          "weight": null,
+          "nationality": "England",
+          "height": "171 cm",
+          "weight": "63 kg",
           "injured": false,
-          "photo": "https://media-3.api-sports.io/football/players/4848.png"
+          "photo": "https://media-3.api-sports.io/football/players/138806.png"
         },
         "statistics": [
           {
             "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-1.api-sports.io/football/teams/928.png"
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-3.api-sports.io/football/teams/33.png"
             },
             "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-1.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-2.api-sports.io/flags/dz.svg",
-              "season": 2011
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-3.api-sports.io/flags/gb.svg",
+              "season": 2019
             },
             "games": {
-              "appearences": 16,
-              "lineups": 10,
-              "minutes": 959,
+              "appearences": 17,
+              "lineups": 11,
+              "minutes": 1005,
               "number": null,
-              "position": "Midfielder",
-              "rating": null,
+              "position": "Defender",
+              "rating": "6.833333",
               "captain": false
             },
             "substitutes": {
               "in": 6,
-              "out": 4,
-              "bench": 0
-            },
-            "shots": {
-              "total": null,
-              "on": null
-            },
-            "goals": {
-              "total": 2,
-              "conceded": null,
-              "assists": null,
-              "saves": null
-            },
-            "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
-            },
-            "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
-            },
-            "duels": {
-              "total": null,
-              "won": null
-            },
-            "dribbles": {
-              "attempts": null,
-              "success": null,
-              "past": null
-            },
-            "fouls": {
-              "drawn": null,
-              "committed": null
-            },
-            "cards": {
-              "yellow": 1,
-              "yellowred": 0,
-              "red": 0
-            },
-            "penalty": {
-              "won": null,
-              "commited": null,
-              "scored": null,
-              "missed": null,
-              "saved": null
-            }
-          }
-        ]
-      },
-      {
-        "player": {
-          "id": 4851,
-          "name": "Abdelhamid Dif",
-          "firstname": "Abdelhamid",
-          "lastname": "Dif",
-          "age": 33,
-          "birth": {
-            "date": "1987-10-19",
-            "place": "Tlemcen",
-            "country": "Algeria"
-          },
-          "nationality": "Algeria",
-          "height": null,
-          "weight": null,
-          "injured": false,
-          "photo": "https://media-3.api-sports.io/football/players/4851.png"
-        },
-        "statistics": [
-          {
-            "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-2.api-sports.io/football/teams/928.png"
-            },
-            "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-3.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-2.api-sports.io/flags/dz.svg",
-              "season": 2011
-            },
-            "games": {
-              "appearences": 11,
-              "lineups": 9,
-              "minutes": 821,
-              "number": null,
-              "position": "Midfielder",
-              "rating": null,
-              "captain": false
-            },
-            "substitutes": {
-              "in": 2,
-              "out": 4,
-              "bench": 0
-            },
-            "shots": {
-              "total": null,
-              "on": null
-            },
-            "goals": {
-              "total": 0,
-              "conceded": null,
-              "assists": null,
-              "saves": null
-            },
-            "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
-            },
-            "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
-            },
-            "duels": {
-              "total": null,
-              "won": null
-            },
-            "dribbles": {
-              "attempts": null,
-              "success": null,
-              "past": null
-            },
-            "fouls": {
-              "drawn": null,
-              "committed": null
-            },
-            "cards": {
-              "yellow": 2,
-              "yellowred": 0,
-              "red": 0
-            },
-            "penalty": {
-              "won": null,
-              "commited": null,
-              "scored": null,
-              "missed": null,
-              "saved": null
-            }
-          }
-        ]
-      },
-      {
-        "player": {
-          "id": 4852,
-          "name": "Abdelhadi Kada Benyacine",
-          "firstname": "Abdelhadi",
-          "lastname": "Kada Benyacine",
-          "age": 30,
-          "birth": {
-            "date": "1990-08-05",
-            "place": "Tlemcen",
-            "country": "Algeria"
-          },
-          "nationality": "Algeria",
-          "height": null,
-          "weight": null,
-          "injured": false,
-          "photo": "https://media-3.api-sports.io/football/players/4852.png"
-        },
-        "statistics": [
-          {
-            "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-2.api-sports.io/football/teams/928.png"
-            },
-            "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-3.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-2.api-sports.io/flags/dz.svg",
-              "season": 2011
-            },
-            "games": {
-              "appearences": 11,
-              "lineups": 7,
-              "minutes": 548,
-              "number": null,
-              "position": "Midfielder",
-              "rating": null,
-              "captain": false
-            },
-            "substitutes": {
-              "in": 4,
-              "out": 1,
-              "bench": 0
-            },
-            "shots": {
-              "total": null,
-              "on": null
-            },
-            "goals": {
-              "total": 0,
-              "conceded": null,
-              "assists": null,
-              "saves": null
-            },
-            "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
-            },
-            "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
-            },
-            "duels": {
-              "total": null,
-              "won": null
-            },
-            "dribbles": {
-              "attempts": null,
-              "success": null,
-              "past": null
-            },
-            "fouls": {
-              "drawn": null,
-              "committed": null
-            },
-            "cards": {
-              "yellow": 3,
-              "yellowred": 1,
-              "red": 0
-            },
-            "penalty": {
-              "won": null,
-              "commited": null,
-              "scored": null,
-              "missed": null,
-              "saved": null
-            }
-          }
-        ]
-      },
-      {
-        "player": {
-          "id": 4853,
-          "name": "Kheireddine Rechrouche",
-          "firstname": "Kheireddine",
-          "lastname": "Rechrouche",
-          "age": 30,
-          "birth": {
-            "date": "1990-03-31",
-            "place": "Annaba",
-            "country": "Algeria"
-          },
-          "nationality": "Algeria",
-          "height": "176 cm",
-          "weight": "64 kg",
-          "injured": false,
-          "photo": "https://media-3.api-sports.io/football/players/4853.png"
-        },
-        "statistics": [
-          {
-            "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-1.api-sports.io/football/teams/928.png"
-            },
-            "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-1.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-1.api-sports.io/flags/dz.svg",
-              "season": 2011
-            },
-            "games": {
-              "appearences": 20,
-              "lineups": 16,
-              "minutes": 1361,
-              "number": null,
-              "position": "Midfielder",
-              "rating": null,
-              "captain": false
-            },
-            "substitutes": {
-              "in": 4,
               "out": 5,
-              "bench": 0
+              "bench": 18
             },
             "shots": {
-              "total": null,
-              "on": null
-            },
-            "goals": {
-              "total": 0,
-              "conceded": null,
-              "assists": null,
-              "saves": null
-            },
-            "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
-            },
-            "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
-            },
-            "duels": {
-              "total": null,
-              "won": null
-            },
-            "dribbles": {
-              "attempts": null,
-              "success": null,
-              "past": null
-            },
-            "fouls": {
-              "drawn": null,
-              "committed": null
-            },
-            "cards": {
-              "yellow": 3,
-              "yellowred": 0,
-              "red": 0
-            },
-            "penalty": {
-              "won": null,
-              "commited": null,
-              "scored": null,
-              "missed": null,
-              "saved": null
-            }
-          }
-        ]
-      },
-      {
-        "player": {
-          "id": 4856,
-          "name": "Mohamed Azzeddine Zouaoui",
-          "firstname": "Mohamed Azzeddine",
-          "lastname": "Zouaoui",
-          "age": 30,
-          "birth": {
-            "date": "1990-06-06",
-            "place": null,
-            "country": "Algeria"
-          },
-          "nationality": "Algeria",
-          "height": null,
-          "weight": null,
-          "injured": false,
-          "photo": "https://media-2.api-sports.io/football/players/4856.png"
-        },
-        "statistics": [
-          {
-            "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-1.api-sports.io/football/teams/928.png"
-            },
-            "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-1.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-1.api-sports.io/flags/dz.svg",
-              "season": 2011
-            },
-            "games": {
-              "appearences": 19,
-              "lineups": 9,
-              "minutes": 813,
-              "number": null,
-              "position": "Midfielder",
-              "rating": null,
-              "captain": false
-            },
-            "substitutes": {
-              "in": 10,
-              "out": 6,
-              "bench": 0
-            },
-            "shots": {
-              "total": null,
-              "on": null
-            },
-            "goals": {
-              "total": 2,
-              "conceded": null,
-              "assists": null,
-              "saves": null
-            },
-            "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
-            },
-            "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
-            },
-            "duels": {
-              "total": null,
-              "won": null
-            },
-            "dribbles": {
-              "attempts": null,
-              "success": null,
-              "past": null
-            },
-            "fouls": {
-              "drawn": null,
-              "committed": null
-            },
-            "cards": {
-              "yellow": 2,
-              "yellowred": 0,
-              "red": 0
-            },
-            "penalty": {
-              "won": null,
-              "commited": null,
-              "scored": null,
-              "missed": null,
-              "saved": null
-            }
-          }
-        ]
-      },
-      {
-        "player": {
-          "id": 4857,
-          "name": "Mohamed Amir Bourahli",
-          "firstname": "Mohamed Amir",
-          "lastname": "Bourahli",
-          "age": 39,
-          "birth": {
-            "date": "1981-03-02",
-            "place": "Constantine",
-            "country": "Algeria"
-          },
-          "nationality": "Algeria",
-          "height": null,
-          "weight": null,
-          "injured": false,
-          "photo": "https://media-3.api-sports.io/football/players/4857.png"
-        },
-        "statistics": [
-          {
-            "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-2.api-sports.io/football/teams/928.png"
-            },
-            "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-1.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-1.api-sports.io/flags/dz.svg",
-              "season": 2011
-            },
-            "games": {
-              "appearences": 12,
-              "lineups": 7,
-              "minutes": 724,
-              "number": null,
-              "position": "Attacker",
-              "rating": null,
-              "captain": false
-            },
-            "substitutes": {
-              "in": 5,
-              "out": 4,
-              "bench": 0
-            },
-            "shots": {
-              "total": null,
-              "on": null
+              "total": 6,
+              "on": 2
             },
             "goals": {
               "total": 1,
@@ -3422,38 +3059,38 @@
               "saves": null
             },
             "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
+              "total": 465,
+              "key": 13,
+              "accuracy": 75
             },
             "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
+              "total": 21,
+              "blocks": 4,
+              "interceptions": 16
             },
             "duels": {
-              "total": null,
-              "won": null
+              "total": 115,
+              "won": 62
             },
             "dribbles": {
-              "attempts": null,
-              "success": null,
+              "attempts": 22,
+              "success": 16,
               "past": null
             },
             "fouls": {
-              "drawn": null,
-              "committed": null
+              "drawn": 15,
+              "committed": 13
             },
             "cards": {
-              "yellow": 0,
+              "yellow": 6,
               "yellowred": 0,
               "red": 0
             },
             "penalty": {
-              "won": null,
+              "won": 1,
               "commited": null,
-              "scored": null,
-              "missed": null,
+              "scored": 0,
+              "missed": 0,
               "saved": null
             }
           }
@@ -3461,54 +3098,149 @@
       },
       {
         "player": {
-          "id": 134056,
-          "name": "Mohamed Touenti",
-          "firstname": "Mohamed",
-          "lastname": "Touenti",
-          "age": 27,
+          "id": 1485,
+          "name": "Bruno Fernandes",
+          "firstname": "Bruno Miguel",
+          "lastname": "Borges Fernandes",
+          "age": 29,
           "birth": {
-            "date": "1993-10-13",
-            "place": "Tlemcen",
-            "country": "Algeria"
+            "date": "1994-09-08",
+            "place": "Maia",
+            "country": "Portugal"
           },
-          "nationality": "Algeria",
-          "height": null,
-          "weight": null,
+          "nationality": "Portugal",
+          "height": "179 cm",
+          "weight": "69 kg",
           "injured": false,
-          "photo": "https://media-2.api-sports.io/football/players/134056.png"
+          "photo": "https://media-2.api-sports.io/football/players/1485.png"
         },
         "statistics": [
           {
             "team": {
-              "id": 928,
-              "name": "WA Tlemcen",
-              "logo": "https://media-2.api-sports.io/football/teams/928.png"
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-3.api-sports.io/football/teams/33.png"
             },
             "league": {
-              "id": 186,
-              "name": "Ligue 1",
-              "country": "Algeria",
-              "logo": "https://media-1.api-sports.io/football/leagues/186.png",
-              "flag": "https://media-2.api-sports.io/flags/dz.svg",
-              "season": 2011
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-2.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-2.api-sports.io/flags/gb.svg",
+              "season": 2019
             },
             "games": {
-              "appearences": 1,
-              "lineups": 0,
-              "minutes": 12,
+              "appearences": 14,
+              "lineups": 14,
+              "minutes": 1193,
               "number": null,
-              "position": "Attacker",
-              "rating": null,
+              "position": "Midfielder",
+              "rating": "7.721428",
               "captain": false
             },
             "substitutes": {
-              "in": 1,
-              "out": 0,
+              "in": 0,
+              "out": 7,
               "bench": 0
             },
             "shots": {
-              "total": null,
-              "on": null
+              "total": 44,
+              "on": 18
+            },
+            "goals": {
+              "total": 8,
+              "conceded": null,
+              "assists": 7,
+              "saves": null
+            },
+            "passes": {
+              "total": 588,
+              "key": 31,
+              "accuracy": 75
+            },
+            "tackles": {
+              "total": 22,
+              "blocks": 0,
+              "interceptions": 11
+            },
+            "duels": {
+              "total": 126,
+              "won": 54
+            },
+            "dribbles": {
+              "attempts": 21,
+              "success": 15,
+              "past": null
+            },
+            "fouls": {
+              "drawn": 14,
+              "committed": 9
+            },
+            "cards": {
+              "yellow": 2,
+              "yellowred": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 2,
+              "commited": null,
+              "scored": 4,
+              "missed": 0,
+              "saved": null
+            }
+          }
+        ]
+      },
+      {
+        "player": {
+          "id": 905,
+          "name": "Fred",
+          "firstname": "Frederico",
+          "lastname": "Rodrigues de Paula Santos",
+          "age": 30,
+          "birth": {
+            "date": "1993-03-05",
+            "place": "Belo Horizonte",
+            "country": "Brazil"
+          },
+          "nationality": "Brazil",
+          "height": "169 cm",
+          "weight": "64 kg",
+          "injured": false,
+          "photo": "https://media-1.api-sports.io/football/players/905.png"
+        },
+        "statistics": [
+          {
+            "team": {
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-3.api-sports.io/football/teams/33.png"
+            },
+            "league": {
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-2.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-3.api-sports.io/flags/gb.svg",
+              "season": 2019
+            },
+            "games": {
+              "appearences": 29,
+              "lineups": 23,
+              "minutes": 2159,
+              "number": null,
+              "position": "Midfielder",
+              "rating": "6.982758",
+              "captain": false
+            },
+            "substitutes": {
+              "in": 6,
+              "out": 2,
+              "bench": 11
+            },
+            "shots": {
+              "total": 40,
+              "on": 10
             },
             "goals": {
               "total": 0,
@@ -3517,38 +3249,323 @@
               "saves": null
             },
             "passes": {
-              "total": null,
-              "key": null,
-              "accuracy": null
+              "total": 1459,
+              "key": 35,
+              "accuracy": 85
             },
             "tackles": {
-              "total": null,
-              "blocks": null,
-              "interceptions": null
+              "total": 60,
+              "blocks": 8,
+              "interceptions": 38
             },
             "duels": {
-              "total": null,
-              "won": null
+              "total": 317,
+              "won": 145
             },
             "dribbles": {
-              "attempts": null,
-              "success": null,
+              "attempts": 53,
+              "success": 40,
               "past": null
             },
             "fouls": {
-              "drawn": null,
-              "committed": null
+              "drawn": 36,
+              "committed": 42
             },
             "cards": {
-              "yellow": 0,
+              "yellow": 8,
               "yellowred": 0,
               "red": 0
             },
             "penalty": {
               "won": null,
               "commited": null,
-              "scored": null,
-              "missed": null,
+              "scored": 0,
+              "missed": 0,
+              "saved": null
+            }
+          }
+        ]
+      },
+      {
+        "player": {
+          "id": 908,
+          "name": "A. Martial",
+          "firstname": "Anthony Jordan",
+          "lastname": "Martial",
+          "age": 28,
+          "birth": {
+            "date": "1995-12-05",
+            "place": "Massy",
+            "country": "France"
+          },
+          "nationality": "France",
+          "height": "181 cm",
+          "weight": "76 kg",
+          "injured": false,
+          "photo": "https://media-2.api-sports.io/football/players/908.png"
+        },
+        "statistics": [
+          {
+            "team": {
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-2.api-sports.io/football/teams/33.png"
+            },
+            "league": {
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-2.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-3.api-sports.io/flags/gb.svg",
+              "season": 2019
+            },
+            "games": {
+              "appearences": 32,
+              "lineups": 31,
+              "minutes": 2640,
+              "number": null,
+              "position": "Attacker",
+              "rating": "7.153125",
+              "captain": false
+            },
+            "substitutes": {
+              "in": 1,
+              "out": 17,
+              "bench": 1
+            },
+            "shots": {
+              "total": 80,
+              "on": 40
+            },
+            "goals": {
+              "total": 17,
+              "conceded": null,
+              "assists": 6,
+              "saves": null
+            },
+            "passes": {
+              "total": 574,
+              "key": 31,
+              "accuracy": 80
+            },
+            "tackles": {
+              "total": 15,
+              "blocks": 1,
+              "interceptions": 5
+            },
+            "duels": {
+              "total": 339,
+              "won": 124
+            },
+            "dribbles": {
+              "attempts": 97,
+              "success": 50,
+              "past": null
+            },
+            "fouls": {
+              "drawn": 41,
+              "committed": 28
+            },
+            "cards": {
+              "yellow": 1,
+              "yellowred": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 1,
+              "commited": null,
+              "scored": 0,
+              "missed": 1,
+              "saved": null
+            }
+          }
+        ]
+      },
+      {
+        "player": {
+          "id": 909,
+          "name": "M. Rashford",
+          "firstname": "Marcus",
+          "lastname": "Rashford",
+          "age": 26,
+          "birth": {
+            "date": "1997-10-31",
+            "place": "Manchester",
+            "country": "England"
+          },
+          "nationality": "England",
+          "height": "180 cm",
+          "weight": "70 kg",
+          "injured": false,
+          "photo": "https://media-1.api-sports.io/football/players/909.png"
+        },
+        "statistics": [
+          {
+            "team": {
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-3.api-sports.io/football/teams/33.png"
+            },
+            "league": {
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-1.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-1.api-sports.io/flags/gb.svg",
+              "season": 2019
+            },
+            "games": {
+              "appearences": 31,
+              "lineups": 31,
+              "minutes": 2655,
+              "number": null,
+              "position": "Attacker",
+              "rating": "7.200000",
+              "captain": false
+            },
+            "substitutes": {
+              "in": 0,
+              "out": 12,
+              "bench": 0
+            },
+            "shots": {
+              "total": 95,
+              "on": 44
+            },
+            "goals": {
+              "total": 17,
+              "conceded": null,
+              "assists": 7,
+              "saves": null
+            },
+            "passes": {
+              "total": 727,
+              "key": 33,
+              "accuracy": 75
+            },
+            "tackles": {
+              "total": 13,
+              "blocks": 0,
+              "interceptions": 10
+            },
+            "duels": {
+              "total": 312,
+              "won": 138
+            },
+            "dribbles": {
+              "attempts": 122,
+              "success": 60,
+              "past": null
+            },
+            "fouls": {
+              "drawn": 45,
+              "committed": 21
+            },
+            "cards": {
+              "yellow": 3,
+              "yellowred": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 4,
+              "commited": null,
+              "scored": 6,
+              "missed": 2,
+              "saved": null
+            }
+          }
+        ]
+      },
+      {
+        "player": {
+          "id": 904,
+          "name": "P. Pogba",
+          "firstname": "Paul Labile",
+          "lastname": "Pogba",
+          "age": 30,
+          "birth": {
+            "date": "1993-03-15",
+            "place": "Lagny-sur-Marne",
+            "country": "France"
+          },
+          "nationality": "France",
+          "height": "191 cm",
+          "weight": "84 kg",
+          "injured": false,
+          "photo": "https://media-3.api-sports.io/football/players/904.png"
+        },
+        "statistics": [
+          {
+            "team": {
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-1.api-sports.io/football/teams/33.png"
+            },
+            "league": {
+              "id": 39,
+              "name": "Premier League",
+              "country": "England",
+              "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+              "flag": "https://media-2.api-sports.io/flags/gb.svg",
+              "season": 2019
+            },
+            "games": {
+              "appearences": 16,
+              "lineups": 13,
+              "minutes": 1204,
+              "number": null,
+              "position": "Midfielder",
+              "rating": "7.137500",
+              "captain": false
+            },
+            "substitutes": {
+              "in": 3,
+              "out": 3,
+              "bench": 3
+            },
+            "shots": {
+              "total": 22,
+              "on": 8
+            },
+            "goals": {
+              "total": 1,
+              "conceded": null,
+              "assists": 3,
+              "saves": null
+            },
+            "passes": {
+              "total": 884,
+              "key": 31,
+              "accuracy": 85
+            },
+            "tackles": {
+              "total": 20,
+              "blocks": 4,
+              "interceptions": 7
+            },
+            "duels": {
+              "total": 179,
+              "won": 94
+            },
+            "dribbles": {
+              "attempts": 38,
+              "success": 27,
+              "past": null
+            },
+            "fouls": {
+              "drawn": 18,
+              "committed": 26
+            },
+            "cards": {
+              "yellow": 1,
+              "yellowred": 0,
+              "red": 0
+            },
+            "penalty": {
+              "won": 2,
+              "commited": 1,
+              "scored": 0,
+              "missed": 1,
               "saved": null
             }
           }

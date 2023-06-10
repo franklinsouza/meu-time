@@ -1,11 +1,16 @@
 export type PlayerData = {
   id: number;
-  name: string;
   age: number;
-  nationality: string;
+  captain: boolean;
+  goals: number;
   height: string;
-  weight: string;
+  name: string;
+  nationality: string;
   photo: string;
+  position: string;
+  red: number;
+  weight: string;
+  yellow: number;
 };
 
 export type StatisticsData = {
@@ -40,9 +45,9 @@ export type Lineups = {
 
 export type TeamInfo = {
   teamName: string;
-  teamLogo: string | undefined;
+  teamLogo: string;
   leagueName: string;
-  leagueLogo: string | undefined;
+  leagueLogo: string;
   leagueSeason: string;
   playedTotal: number;
   wins: number;

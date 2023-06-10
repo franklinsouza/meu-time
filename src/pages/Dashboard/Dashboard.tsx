@@ -7,15 +7,15 @@ import useLocalStorage from '../../hooks/useLocalStorage';
 import Breadcrumbies from '../../components/Breadcrumbies';
 import GoalsChart from './components/GoalsChart';
 import LineUpTable from './components/LineUpTable';
-import PlayerCard from './components/PlayerCard';
 import { PlayerData, StatisticsData, TeamInfo } from './dashboard.type';
 import PlayCard from './components/PlayCard';
+import Players from './components/Players';
 
 const Dashboard = () => {
   const { user } = useUserContext();
   const { teamStatistics, teamPlayers } = useFetch();
   const { getStorage, setStorage } = useLocalStorage();
-  const [playersInfo, setPlayersInfo] = useState([]);
+  const [playersInfo, setPlayersInfo] = useState<PlayerData[]>([]);
   const [teamInfo, setTeamInfo] = useState<TeamInfo>({
     teamName: '',
     teamLogo: '',
@@ -37,23 +37,25 @@ const Dashboard = () => {
     try {
       const { data } = await teamStatistics(season, league, team);
 
-      setTeamInfo((prevState) => {
-        return {
-          ...prevState,
-          teamName: data.team.name,
-          teamLogo: data.team.logo,
-          leagueName: data.league.name,
-          leagueLogo: data.league.logo,
-          leagueSeason: data.league.season,
-          playedTotal: data.fixtures.played.total,
-          wins: data.fixtures.wins.total,
-          draws: data.fixtures.draws.total,
-          loses: data.fixtures.loses.total,
-          lineups: data.lineups,
-          goalsPerMinute: data.goals.for.minute,
-          goalsTotal: data.goals.for.total,
-        };
-      });
+      if (Object.keys(data).length) {
+        setTeamInfo((prevState) => {
+          return {
+            ...prevState,
+            teamName: data.team.name,
+            teamLogo: data.team.logo,
+            leagueName: data.league.name,
+            leagueLogo: data.league.logo,
+            leagueSeason: data.league.season,
+            playedTotal: data.fixtures.played.total,
+            wins: data.fixtures.wins.total,
+            draws: data.fixtures.draws.total,
+            loses: data.fixtures.loses.total,
+            lineups: data.lineups,
+            goalsPerMinute: data.goals.for.minute,
+            goalsTotal: data.goals.for.total,
+          };
+        });
+      }
     } catch (err) {
       console.log(err);
     }
@@ -63,31 +65,33 @@ const Dashboard = () => {
     try {
       const { data } = await teamPlayers(season, league, team);
 
-      const formatedData = data.flatMap(
-        ({
-          player,
-          statistics,
-        }: {
-          player: PlayerData;
-          statistics: StatisticsData[];
-        }) =>
-          statistics.map((statistic) => ({
-            id: player.id,
-            name: player.name,
-            age: player.age,
-            nationality: player.nationality,
-            height: player.height,
-            weight: player.weight,
-            photo: player.photo,
-            red: statistic.cards.red,
-            yellow: statistic.cards.yellow,
-            goals: statistic.goals.total,
-            captain: statistic.games.captain,
-            position: statistic.games.position,
-          }))
-      );
-      // console.log('Flated: ', formatedData);
-      setPlayersInfo(formatedData);
+      if (data.length) {
+        const formatedData = data.flatMap(
+          ({
+            player,
+            statistics,
+          }: {
+            player: PlayerData;
+            statistics: StatisticsData[];
+          }) =>
+            statistics.map((statistic) => ({
+              id: player.id,
+              name: player.name,
+              age: player.age,
+              nationality: player.nationality,
+              height: player.height,
+              weight: player.weight,
+              photo: player.photo,
+              red: statistic.cards.red,
+              yellow: statistic.cards.yellow,
+              goals: statistic.goals.total,
+              captain: statistic.games.captain,
+              position: statistic.games.position,
+            }))
+        );
+
+        setPlayersInfo(formatedData);
+      }
     } catch (err) {
       console.log(err);
     }
@@ -171,13 +175,7 @@ const Dashboard = () => {
               <LineUpTable lineups={teamInfo.lineups} />
             </div>
           </div>
-
-          <h2 className="text-2xl font-semibold mb-4">Jogadores</h2>
-          <div className="grid grid-cols-5 gap-3">
-            {playersInfo.map((player: PlayerData) => (
-              <PlayerCard key={player.id} player={player} />
-            ))}
-          </div>
+          {playersInfo.length !== 0 && <Players players={playersInfo} />}
         </div>
       </div>
     </div>
