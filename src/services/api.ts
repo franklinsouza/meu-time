@@ -6,6 +6,8 @@ function api(endPoint: string, key?: string): ApiRequestInit {
   const storageKey: string | null = localStorage.getItem('mta');
   const parseKey = storageKey !== null ? JSON.parse(storageKey).key : null;
 
+  console.log(parseKey);
+
   return {
     url: `${BASE_URL}${endPoint}`,
     options: {

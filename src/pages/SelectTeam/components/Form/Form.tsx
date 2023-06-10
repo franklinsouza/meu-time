@@ -107,8 +107,9 @@ const Form = () => {
     }
   };
 
+  const { key } = getStorage();
+
   useEffect(() => {
-    const { key } = getStorage();
     const getCountries = async () => {
       try {
         setDataCountriesApi((prevData) => ({

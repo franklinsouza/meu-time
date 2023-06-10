@@ -3,7 +3,6 @@ import Login from './pages/Login';
 import AppProvider from './contexts';
 import SelectTeam from './pages/SelectTeam';
 import Dashboard from './pages/Dashboard';
-import PrivateRoute from './components/Routes/PrivateRoute';
 
 function App() {
   return (
